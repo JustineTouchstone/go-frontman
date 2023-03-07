@@ -8,8 +8,6 @@ import (
 	"github.com/hyperioxx/frontman/service"
 )
 
-// I will implement api.go first
-
 func getServicesHandler(bs service.ServiceRegistry) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		services := bs.GetServices()
